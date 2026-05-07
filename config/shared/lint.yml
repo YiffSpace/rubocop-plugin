@@ -1,0 +1,4 @@
+# $schema: https://www.rubyschema.org/rubocop.json
+
+Lint/SymbolConversion:
+  EnforcedStyle: consistent

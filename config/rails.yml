@@ -1,0 +1,8 @@
+# $schema: https://www.rubyschema.org/rubocop.json
+
+plugins:
+  - rubocop-rails
+
+inherit_from:
+  - ./shared.yml
+  - ./shared/rails.yml

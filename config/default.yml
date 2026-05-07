@@ -1,0 +1,54 @@
+# $schema: https://www.rubyschema.org/rubocop.json
+
+YiffSpace/BelongsToUser:
+  Description: 'Enforces using `belongs_to_user` instead of `belongs_to` for User associations.'
+  Enabled: false
+  VersionAdded: '<<next>>'
+  SafeAutoCorrect: false
+  ClassName: User
+
+YiffSpace/BelongsToUserInvalidIp:
+  Description: 'Detects `belongs_to_user` calls with an `ip:` option pointing to a non-existent database column.'
+  Enabled: false
+  VersionAdded: '<<next>>'
+  SafeAutoCorrect: false
+
+YiffSpace/BelongsToUserMissingIp:
+  Description: 'Detects `belongs_to_user` calls missing `ip: true` when a corresponding `_ip_addr` column exists.'
+  Enabled: false
+  VersionAdded: '<<next>>'
+  SafeAutoCorrect: false
+
+YiffSpace/CurrentUserOutsideOfRequests:
+  Description: 'Restricts use of `CurrentUser` to the request cycle (controllers, views, helpers, decorators).'
+  Enabled: false
+  VersionAdded: '<<next>>'
+  ClassName: CurrentUser
+  Exclude:
+    - app/views/**/*.erb
+    - app/controllers/**/*.rb
+    - app/helpers/**/*.rb
+    - app/presenters/**/*.rb
+    - app/decorators/**/*.rb
+    - app/inputs/**/*.rb
+  IgnoredMethodPatterns: []
+  IgnoredMethodPrefixes:
+    - apionly_
+  IgnoredMethodSuffixes:
+    - _current
+    - _current!
+    - _current?
+  IgnoredMethods:
+    - serializable_hash
+
+YiffSpace/ResolvableUser:
+  Description: 'Suggests replacing `resolvable` with `belongs_to_user` when a corresponding `_id` column exists.'
+  Enabled: false
+  VersionAdded: '<<next>>'
+  SafeAutoCorrect: false
+
+YiffSpace/UserToID:
+  Description: 'Enforces use of `u2id` instead of the `x.is_a?(User) ? x.id : x` ternary pattern.'
+  Enabled: false
+  VersionAdded: '<<next>>'
+  SafeAutoCorrect: false

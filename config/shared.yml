@@ -1,0 +1,12 @@
+# $schema: https://www.rubyschema.org/rubocop.json
+
+inherit_from:
+  - ./shared/bundler.yml
+  - ./shared/gemspec.yml
+  - ./shared/layout.yml
+  - ./shared/lint.yml
+  - ./shared/metrics.yml
+  - ./shared/migration.yml
+  - ./shared/naming.yml
+  - ./shared/security.yml
+  - ./shared/style.yml

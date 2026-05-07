@@ -1,0 +1,7 @@
+# $schema: https://www.rubyschema.org/rubocop.json
+
+Naming/PredicatePrefix:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: false

@@ -1,0 +1,17 @@
+YiffSpace/BelongsToUser:
+  Enabled: true
+
+YiffSpace/BelongsToUserInvalidIp:
+  Enabled: true
+
+YiffSpace/BelongsToUserMissingIp:
+  Enabled: true
+
+YiffSpace/CurrentUserOutsideOfRequests:
+  Enabled: true
+
+YiffSpace/ResolvableUser:
+  Enabled: true
+
+YiffSpace/UserToID:
+  Enabled: true

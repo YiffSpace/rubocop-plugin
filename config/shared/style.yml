@@ -1,0 +1,45 @@
+# $schema: https://www.rubyschema.org/rubocop.json
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: false
+
+Style/FloatDivision:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
+
+Style/PerlBackrefs:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  IgnoreMacros: false
+
+Lint/StructNewOverride:
+  Enabled: false
+
+Style/SingleLineMethods:
+  Enabled: true
+  AllowIfMethodIsEmpty: true
+
+Style/MultilineBlockChain:
+  Enabled: false

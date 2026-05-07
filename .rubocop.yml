@@ -1,0 +1,26 @@
+inherit_mode:
+  merge:
+    - Exclude
+    - Include
+
+inherit_from:
+  - ./config/shared.yml
+
+plugins:
+  - rubocop-internal_affairs
+  - rubocop-rspec
+  - rubocop-rake
+#  - rubocop-yiffspace
+
+AllCops:
+  NewCops: enable
+
+Naming/FileName:
+  Exclude:
+    - lib/rubocop-yiffspace.rb
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/VerifiedDoubles:
+  Enabled: false
